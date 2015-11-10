@@ -62,7 +62,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.CustomViewHOlder> 
         public void onClick(View v) {
             MaterialDialog mMaterialDailog = new MaterialDialog(itemView.getContext())
                     .setTitle("         Password")
-                    .setMessage("            "+networksArrayList
+                    .setMessage("            " + networksArrayList
                             .get(getAdapterPosition()).getPsk().
                                     substring(1, networksArrayList.get(getAdapterPosition()).getPsk().length() - 1));
             mMaterialDailog.show();
